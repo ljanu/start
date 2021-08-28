@@ -16,6 +16,10 @@ class StartServiceProvider extends ServiceProvider
         //register routs
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
 
+
+        //register view
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'start');
+
     }
 
 

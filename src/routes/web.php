@@ -1,5 +1,5 @@
 <?php
 
 Route::get('/start', function () {
-    return 'Hello START Packages';
+    return view('start::welcome');
 })->name('start');
