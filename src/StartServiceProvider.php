@@ -20,6 +20,10 @@ class StartServiceProvider extends ServiceProvider
         //register view
         $this->loadViewsFrom(__DIR__.'/resources/views', 'start');
 
+        //publishes
+        $this->publishes([__DIR__.'resources/view'=>resource_path('views')], 'star-view');
+        $this->publishes([__DIR__.'resources/css'=>resource_path('css')], 'star-css');
+
     }
 
 
