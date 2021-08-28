@@ -1,5 +1,5 @@
 <?php
 
 Route::get('/start', function () {
-    return view('start::welcome');
+    return view('start::index');
 })->name('start');
