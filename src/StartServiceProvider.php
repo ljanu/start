@@ -23,14 +23,14 @@ class StartServiceProvider extends ServiceProvider
         //publishes layout
         $this->publishes([
             __DIR__ . '/resources/views/components/start'
-            => resource_path('views/components'),
+            => resource_path('views/components/start'),
         ],
             'star-layout');
 
         // published index
         $this->publishes([
             __DIR__ . '/resources/views/index.blade.php'
-            => resource_path('views'),
+            => resource_path('views/index.blade.php'),
         ],
             'star-index');
 
@@ -38,7 +38,7 @@ class StartServiceProvider extends ServiceProvider
         // published css
         $this->publishes([
             __DIR__ . '/resources/css/start.css'
-            => resource_path('css'),
+            => resource_path('css/start.css'),
         ],
             'star-css');
 
