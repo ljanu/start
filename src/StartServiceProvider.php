@@ -25,14 +25,14 @@ class StartServiceProvider extends ServiceProvider
             __DIR__ . '/resources/views/components/start'
             => resource_path('views/components/start'),
         ],
-            'star-layout');
+            'start-layout');
 
         // published index
         $this->publishes([
             __DIR__ . '/resources/views/index.blade.php'
             => resource_path('views/index.blade.php'),
         ],
-            'star-index');
+            'start-index');
 
 
         // published css
@@ -40,7 +40,7 @@ class StartServiceProvider extends ServiceProvider
             __DIR__ . '/resources/css/start.css'
             => resource_path('css/start.css'),
         ],
-            'star-css');
+            'start-css');
 
     }
 
