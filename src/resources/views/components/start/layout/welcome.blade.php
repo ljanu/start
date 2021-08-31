@@ -79,7 +79,7 @@
 {{$googleTagManager ?? null}}
 
 {{-- main content --------------------------------------------------------------------------------}}
-<div class = " bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 h-screen" >
+<div class = " bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 " >
 
     {{-- togle dark mode -------------------------------------------------------------------------}}
     <div
