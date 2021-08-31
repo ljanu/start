@@ -37,12 +37,24 @@
         @apply py-2 px-1 pt-5 md:pt-7;
     }
 
-    ul {
-        @apply pl-10 pt-5 md:pt-7 list-disc;
+    ul, ol, dl {
+        @apply pl-10 pt-5 md:pt-7
     }
 
-    ol {
-        @apply pl-10 pt-5 md:pt-7 list-decimal;
+    ul {
+        @apply list-disc;
+    }
+
+    ol, dd {
+        @apply list-decimal;
+    }
+
+    dt {
+        @apply font-bold text-red-500;
+    }
+
+    dd {
+        @apply pl-2;
     }
 
     li {
