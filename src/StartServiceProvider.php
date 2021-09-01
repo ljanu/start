@@ -24,38 +24,43 @@ class StartServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'start');
 
 
-        //-------- PUBLISHES --------------------------------------------------
+        //-- PUBLISHED -----------------------------------------------------
 
         //publishes layout
         $this->publishes([
             __DIR__ . '/resources/views/components/start'
             => resource_path('views/components/start'),
-        ]);
+        ],
+            'start-layout');
 
         // published index
         $this->publishes([
             __DIR__ . '/resources/views/index.blade.php'
             => resource_path('views/index.blade.php'),
-        ]);
+        ],
+            'start-index');
 
         // published dashboard
         $this->publishes([
             __DIR__ . '/resources/views/dashboard.blade.php'
             => resource_path('views/dashboard.blade.php'),
-        ]);
+        ],
+            'start-dashboard');
 
 
         // published css
         $this->publishes([
             __DIR__ . '/resources/css/start.css'
             => resource_path('css/start.css'),
-        ]);
+        ],
+            'start-css');
 
         //publish translate
         $this->publishes([
             __DIR__.'/resources/lang'
             => resource_path('lang'),
-        ]);
+        ],
+            'start-translate');
 
     }
 
