@@ -19,8 +19,9 @@ class StartServiceProvider extends ServiceProvider
 
         //register view
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'start');
+
         //register translate
-        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'start-translate');
+        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'start');
 
         //publishes layout
         $this->publishes([
@@ -43,6 +44,13 @@ class StartServiceProvider extends ServiceProvider
             => resource_path('css/start.css'),
         ],
             'start-css');
+
+        //publish translate
+        $this->publishes([
+            __DIR__.'/resources/lang'
+            => resource_path('lang'),
+        ],
+            'start-translate');
 
     }
 
