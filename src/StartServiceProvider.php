@@ -65,9 +65,9 @@ class StartServiceProvider extends ServiceProvider
         //publish img
         $this->publishes([
             __DIR__.'/resources/img'
-            => public_path('start'),
+            => public_path(),
         ],
-            'start-start');
+            'start-img');
     }
 
 
