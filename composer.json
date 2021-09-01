@@ -17,10 +17,5 @@
         }
     },
     "require-dev": {
-    },
-    "scripts": {
-        "post-package-install": [
-            "php artisan vendor:publish --tag=start-layout --force"
-        ]
     }
 }
