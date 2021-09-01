@@ -11,6 +11,20 @@
 - `star-index` nainstaluje do adresáře `resource/views` soubor `index.blade.php`
 - `start-css` naistaluje do adresáře `resource/css/` soubory `start.css`
 
+Veřejné zdroje lze rovněž publikovat přes soubor `/composer.json`
+
+```shell
+    "scripts": {
+        "post-update-cmd": [
+            "php artisan vendor:publish --tag=start-layout --force",
+            "php artisan vendor:publish --tag=start-index --force",
+            "php artisan vendor:publish --tag=start-dashboard --force",
+            "php artisan vendor:publish --tag=start-css --force",
+            "php artisan vendor:publish --tag=start-translate --force"
+        ],
+```
+
+
 ---
 ### Soubory `follow.blade.php` a `nofollow.blade.php`
 
