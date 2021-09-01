@@ -99,7 +99,9 @@
     {{$scripts}}
 
     {{-- login --}}
-    <x-start::start.layout.log-in-out/>
+    @if (Route::currentRouteName() != 'dashboard')
+        <x-start::start.layout.log-in-out />
+    @endif
 
 
 </div >
