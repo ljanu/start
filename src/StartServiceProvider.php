@@ -62,6 +62,12 @@ class StartServiceProvider extends ServiceProvider
         ],
             'start-translate');
 
+        //publish img
+        $this->publishes([
+            __DIR__.'/resources/img'
+            => public_path('start'),
+        ],
+            'start-start');
     }
 
 
