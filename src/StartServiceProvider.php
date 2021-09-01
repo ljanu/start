@@ -37,6 +37,13 @@ class StartServiceProvider extends ServiceProvider
         ],
             'start-index');
 
+        // published dashboard
+        $this->publishes([
+            __DIR__ . '/resources/views/dashboard.blade.php'
+            => resource_path('views/dashboard.blade.php'),
+        ],
+            'start-dashboard');
+
 
         // published css
         $this->publishes([
