@@ -19,6 +19,8 @@ class StartServiceProvider extends ServiceProvider
 
         //register view
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'start');
+        //register translate
+        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'start-translate');
 
         //publishes layout
         $this->publishes([
