@@ -1,10 +1,18 @@
 <?php
 
 
-Route::get('/start', function () {
-    return view('start::start');
-})->name('start');
+Route::middleware('auth')->group(function (){
 
-Route::get("/start/form", function () {
-    return view("start::form");
-})->name("form");
+    Route::get('/start', function () {
+        return view('start::start');
+    })->name('start');
+
+    Route::get("/start/form", function () {
+        return view("start::form");
+    })->name("form");
+
+});
+
+
+
+
