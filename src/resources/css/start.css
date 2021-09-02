@@ -50,7 +50,7 @@
     }
 
     dt {
-        @apply font-bold text-red-500;
+        @apply font-bold ;
     }
 
     dd {
@@ -59,10 +59,6 @@
 
     li {
         @apply pl-2;
-    }
-
-    label {
-        @apply m-2;
     }
 
 
@@ -95,14 +91,14 @@
 
     [type="radio"],
     [type="checkbox"] {
-        @apply m-2 p-2 w-5 h-5
+        @apply p-2 w-5 h-5
         dark:bg-gray-700
         focus:bg-gray-200 dark:focus:bg-gray-800
         hover:bg-gray-200 dark:hover:bg-gray-600 ;
     }
 
     [type="submit"], button {
-        @apply m-2 py-2 px-4 border border-gray-200 dark:border-gray-600 rounded-md
+        @apply py-2 px-4 border border-gray-200 dark:border-gray-600 rounded-md
         bg-blue-700 dark:bg-blue-600
         hover:bg-blue-800 dark:hover:bg-blue-700
         text-white
@@ -178,17 +174,17 @@
     }
 
     .ral-8028 {
-        background-color: #402E20 ;
+        background-color: #402E20;
         @apply text-gray-100;
     }
 
     .ral-8014 {
-        background-color: #493B31 ;
+        background-color: #493B31;
         @apply text-gray-100;
     }
 
     .ral-8004 {
-        background-color: #86382C ;
+        background-color: #86382C;
         @apply text-gray-100;
     }
 
