@@ -6,8 +6,8 @@
     <x-slot name="content">
         <h1 >základní typografie</h1 >
         <p >zobrazení základního vzhledu aplikací. Soubor start.css</p >
-        
-        {{-- headings --}}    
+
+        {{-- headings --}}
         <div>
             <h1 >h1</h1 >
 
@@ -32,7 +32,7 @@
                 placerat eleifend leo.
             </p >
         </div>
-        
+
         {{-- lists --}}
         <div>
             <h2>definiční seznam</h2>
